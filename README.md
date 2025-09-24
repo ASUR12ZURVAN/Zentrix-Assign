@@ -16,3 +16,22 @@ Same changes have been made in app routing
 To start the server run `php artisan serve`
 And to run the automation selenium file in a new terminal after going to parent dir run `python testing.py`
 
+Task -3
+The html page named app-calendar.html has been placed as **app-calendar.blade.php**
+
+`Route::get('calendar',[App\Http\Controllers\Caller\LoginController::class,'go_to_calendar']); //Route added as task - 3`
+This code has been added in web.php in routes
+
+The corresponding controller code has been added in the same **LoginController.php**
+
+Refferencing code in **LoginController.php** is
+`public function go_to_calendar(Request $request){
+                        return View("caller.calendar.app-calendar");
+                }`
+To see the calendar page first run the server using specefied command while being in `Root\main-laravel\`
+
+And in the url add a calendar field.
+**http://127.0.0.1:8000/calendar**
+
+All three specefied tasks are done
+Check github log or history to see all the respective code changes.

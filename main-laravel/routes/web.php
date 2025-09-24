@@ -25,3 +25,4 @@ Route::domain('da.adlynk.in')->group(function () {
 });
 
 Route::get('/',[App\Http\Controllers\Caller\LoginController::class,'index']);
+Route::get('calendar',[App\Http\Controllers\Caller\LoginController::class,'go_to_calendar']); //Route added as task - 3

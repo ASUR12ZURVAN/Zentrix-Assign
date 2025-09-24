@@ -71,6 +71,12 @@ class LoginController extends Controller
         return Socialite::driver($driver)->redirect();
     }
 
+    ////////////custom added router for calendar////////////
+    public function go_to_calendar(Request $request){
+        return View("caller.calendar.app-calendar");
+    }
+    //////////////////Added////////////////////////////////
+
     public function handleProviderCallback(Request $request) {
 
         $driver = $request->driver;
