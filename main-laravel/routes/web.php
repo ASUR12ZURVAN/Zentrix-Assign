@@ -24,3 +24,4 @@ Route::domain('da.adlynk.in')->group(function () {
     });
 });
 
+Route::get('/',[App\Http\Controllers\Caller\LoginController::class,'index']);
